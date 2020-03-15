@@ -1,0 +1,88 @@
+
+# This is a Tooltips text file. Feel free to edit this fle to personalize
+# your tooltips for particular controls.
+
+# Copyright 2018 Bill Williams
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# Format is
+# Tooltip ID number - DO NOT CHANGE! : Tooltip text to display $
+#
+# Blank lines are ignored, and any line starting with a '#' is ignored.
+# All whitespace before and after the Tooltip ID Number and text is removed before processing.
+# Text will continue to be appended until the line ends with a dollar sign.
+# The '(C)' text is replaced with:
+#	'Thanks to: picamera.readthedocs.io/en/release-1.13/api_camera.html'
+#e.g.,
+# 35 : This is some tooltip text. $
+# 36 : This text here spans three lines. The amount of text is only limited by python
+#      and could be huge. This can go on until a the dollar sign is 
+#      found. $
+# 36 : The next tooltip. Use a newline \n to force a newline in the displayed text. $
+
+# ----------------------- TODOs ------------------------
+# ADD: An optional aspect number to control the size of the tooltip 
+# ADD: Common text. Embed in text by <Number>
+#      e.g.
+#	 300 : This is some text.\n\nNow add common text here. <25000> $
+#      25000 : This is special text that may be referenced multiple times. $
+
+# ------------- Plot Window and Buttons underneath  ------------- 
+
+1 : Main Plot Window. $
+
+30:	Run / Stop data collection and plotting. $
+31:	Start a new logfile. Continue logging until data collection is ended. $
+32:	Pause/Continue logfile. When paused, no data is written to the logfile, but log time is increasing. $
+33:	Clear the plot window. $
+34:	Run / Pause data plotting. $
+
+#-------------- Status Bar ------------------
+40: Estimate of the data thread Queue size. A smaller number is better. $
+41: Current Logging file is being written. $
+42: Current Logging filesize. Filesize is updated approximately every 10 seconds. $
+
+# -------------- OK / Cancel in Dialogs --------------
+50 : Close the window. If changes were made, then save the changes. $
+51 : Close the windows without saving any changes. $
+52 : Display specific help for this window. $
+
+# ------------- Basic Controls Tab ----------------
+
+100 : $
+
+# ------------- Display Tab ----------------
+
+# Picture / Video Capture
+200 : $
+
+#----------------- Preferences Dialog -------------------
+# General tab
+6002 : Select the default directory for saving screen shots. $
+6003 : Current default directory for saving screen shots. $
+6004 : Select the default directory for saving log files. $
+6005 : Current default directory for saving log files. $
+
+6050 : Enter the default date/time format string to be used for the timestamp. $
+6051 : Current default timestamp format. $
+6052 : Get web help on date/time format commands. $
+6060 : Default filename for log files. $
+6061 : Default filename for screen shot files. $
+
+# Interface tab
+6100 : List of available 'themes' to apply to the PiCameraApp user interface. $
+6110 : Enable/disable tooltips. $
+6111 : Enable/disable showing the tip number in the tooltips.\n\nThis is a debug
+option. $
+6112 : Select the amount of delay before the tooltip is shown once the mouse starts
+hovering over a control/widget. $
+6113 : Current amount of tooltip delay. $
+
+# Other tab
